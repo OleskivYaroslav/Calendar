@@ -12,11 +12,11 @@ public class MyCalendarClass {
 
     private final LocalDate today = LocalDate.now();
     private final int firstDayOfMonth = 1;
-    private YearMonth yearMonth = YearMonth.of(today.getYear(), today.getMonth());
+    private YearMonth yearMonthOfToday = YearMonth.of(today.getYear(), today.getMonth());
     private ArrayList<LocalDate> monthsDays = new ArrayList<LocalDate>();
 
 
-    public void printYearMonth(YearMonth yearMonth){
+    public void printMyCalendar(YearMonth yearMonth){
         printingYearAndMonth(yearMonth);
         printingShortDaysOfWeek();
         tabbingForFirstDayOfMonthInWeek(yearMonth);
@@ -24,8 +24,8 @@ public class MyCalendarClass {
         printingDaysOfMonth();
     }
 
-    public void printYearMonth(){
-        printYearMonth(this.yearMonth);
+    public void printMyCalendar(){
+        printMyCalendar(this.yearMonthOfToday);
     }
 
     private void tabbingForFirstDayOfMonthInWeek(YearMonth yearMonth){
@@ -68,10 +68,10 @@ public class MyCalendarClass {
         temp = "\u001B[0m%-5d";
         if(day.getDayOfWeek().getValue()== DayOfWeek.SATURDAY.getValue()
                 || day.getDayOfWeek().getValue()== DayOfWeek.SUNDAY.getValue()) {
-            temp = "\u001B[0m\u001B[31m%-5d";
+            temp = "\u001B[0m\u001B[31m%-5d";  // doing day red color if it is SATURDAY or SUNDAY
         }
         if(day.equals(today)){
-            temp = "\u001B[0m\u001B[32m%-5d";
+            temp = "\u001B[0m\u001B[32m%-5d";  // doing day green color if it is today
         }
         return temp;
     }
