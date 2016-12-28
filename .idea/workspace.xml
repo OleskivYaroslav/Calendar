@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7bacecf-dd98-4835-959c-9dd690378cf7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/syavo/calendar/Main.java" afterPath="$PROJECT_DIR$/src/ua/syavo/calendar/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java" afterPath="$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java" afterPath="$PROJECT_DIR$/src/ua/syavo/calendar/Calendar.java" />
     </list>
     <ignored path="Calendar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,15 +34,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyCalendarClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java">
+      <file leaf-file-name="Calendar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/syavo/calendar/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="68">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#417#428#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#366#377#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +69,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java" />
         <option value="$PROJECT_DIR$/src/ua/syavo/calendar/Main.java" />
+        <option value="$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java" />
+        <option value="$PROJECT_DIR$/src/ua/syavo/calendar/Calendar.java" />
       </list>
     </option>
   </component>
@@ -459,14 +461,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/syavo/calendar/MyCalendarClass.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/syavo/calendar/Calendar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#417#428#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#366#377#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
           </folding>
         </state>
       </provider>

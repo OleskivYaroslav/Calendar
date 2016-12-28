@@ -4,11 +4,7 @@ import java.time.*;
 import java.time.format.*;
 import java.util.*;
 
-/**
- * Created by Syavo on 28.12.2016.
- */
-
-public class MyCalendarClass {
+public class Calendar {
 
     private final LocalDate today = LocalDate.now();
     private final int firstDayOfMonth = 1;
