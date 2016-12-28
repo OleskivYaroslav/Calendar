@@ -15,7 +15,7 @@ public class Calendar {
     public void printCalendar(YearMonth yearMonth){
         printYearAndMonth(yearMonth);
         printShortDaysOfWeek();
-        tabForFirstDayOfMonthInWeek(yearMonth);
+        printTabForFirstDayOfMonth(yearMonth);
         creatDaysListOfMonth(yearMonth);
         printDaysOfMonth();
     }
@@ -24,7 +24,7 @@ public class Calendar {
         printCalendar(this.yearMonthOfToday);
     }
 
-    private void tabForFirstDayOfMonthInWeek(YearMonth yearMonth){
+    private void printTabForFirstDayOfMonth(YearMonth yearMonth){
         LocalDate firstDayOfMonth = LocalDate.of(yearMonth.getYear(), yearMonth.getMonth(), this.firstDayOfMonth);
         DayOfWeek firstDayOfMonthInWeek = firstDayOfMonth.getDayOfWeek();
         String temp = "";
@@ -36,7 +36,7 @@ public class Calendar {
 
     private void printShortDaysOfWeek(){
         for (DayOfWeek i : DayOfWeek.values()){
-            System.out.print(i.getDisplayName(TextStyle.SHORT , Locale.ENGLISH)+"  ");
+            System.out.printf(i.getDisplayName(TextStyle.SHORT , Locale.ENGLISH)+"  ");
         }
     }
 
