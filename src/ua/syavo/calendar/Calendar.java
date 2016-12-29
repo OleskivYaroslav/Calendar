@@ -57,6 +57,8 @@ public class Calendar {
         for (LocalDate i: this.monthsDays) {
             System.out.printf(getColorOfDay(i), i.getDayOfMonth());
         }
+        System.out.println();
+        monthsDays.clear();
     }
 
     private String getColorOfDay(LocalDate day){

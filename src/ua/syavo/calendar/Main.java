@@ -9,6 +9,7 @@ public class Main {
         YearMonth yearMonth = YearMonth.of(2015, 11);
         Calendar calendar = new Calendar();
         calendar.printCalendar(yearMonth);
+        calendar.printCalendar();
 
     }
 }
